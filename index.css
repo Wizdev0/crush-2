@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to bottom right, #ffabdb, #ffc3a0);
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header{
+    margin-bottom: 20px;
+}
+
+header h1{
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+header p{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.form-section{
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #ff6f61;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover{
+    background: #e65b50;
+}
+
+.fortune-card{
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 1.2rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.fortune-card h2{
+    font-size: 1.8rem;
+    color: #ff6f61;
+}
+
+.hidden{
+    display: none;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width:768px) {
+    header h1{
+        font-size: 1rem;
+    }
+
+    input[type="text"] {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    button{
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .fortune-card{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1{
+        font-size: 1.5rem;
+    }
+
+    input[type="text"] {
+        font-size: 0.8rem;
+    }
+
+    button{
+        font-size: 0.8rem;
+    }
+
+    .fortune-card h2{
+        font-size: 1.5rem;
+    }    
+}
